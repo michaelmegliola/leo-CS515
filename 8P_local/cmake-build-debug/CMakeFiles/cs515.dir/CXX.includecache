@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/leomegliola/CLionProjects/8P_local/HuffTree.cpp
+HuffTree.h
+/Users/leomegliola/CLionProjects/8P_local/HuffTree.h
+PQueue.h
+/Users/leomegliola/CLionProjects/8P_local/PQueue.h
+
+/Users/leomegliola/CLionProjects/8P_local/HuffTree.h
+string
+-
+
+/Users/leomegliola/CLionProjects/8P_local/PQueue.cpp
+PQueue.h
+/Users/leomegliola/CLionProjects/8P_local/PQueue.h
+
+/Users/leomegliola/CLionProjects/8P_local/PQueue.h
+iostream
+-
+PQueue.cpp
+/Users/leomegliola/CLionProjects/8P_local/PQueue.cpp
+

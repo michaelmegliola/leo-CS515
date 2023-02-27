@@ -1,0 +1,54 @@
+CS515 Lab 8
+
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+
+mysterySort1 is bubble sort
+Your evidence: 
+I ran with 500 elements in reverse order and looked at the vector after 1 and 2 microseconds.
+I noticed the elements being moved one at a time to the back of the vector from the beginning.
+
+mysterySort2 is quick
+Your evidence: 
+I may have noticed some peaks during one of my tests, which is characteristic of quick sort.
+My conclusion is mostly a guess (see challenges section).
+
+mysterySort3 is insertion sort
+Your evidence: 
+I ran with 500 elements in reverse order and looked at the vector after 1 and 2 microseconds.
+I noticed the elements at the beginning of the vector being 'inserted' into their correct
+locations, relative to their neighbors.
+
+mysterySort4 is heap
+Your evidence: 
+guess (see challenges section)
+
+
+mysterySort5 is merge sort
+Your evidence: 
+I used the total time to completion for three large lists: random, ascending, and descending.
+The time to completion was roughly the same in all three cases. This is consistent with merge
+sort because it is nlog(n) for all input cases.
+
+——————————————————
+How many hours did you take to complete this assignment?
+
+4
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+8
+
+What challenges did you encounter? And how did you address them?
+
+In the sort guessing section of the lab, I find that the timing is inconsistent to the point
+where it is difficult to draw any meaningful conclusions. I tired many vectors lengths to better
+see differences in completion time, anywhere from 10 to 5000 elements, this made no difference.
+I also found while using the second argument in mystery sort that the resolution is not adequate
+to distinguish the algorithms: when I varied the argument by 1 microsecond intervals, it would
+either do nothing or the list would be fully sorted. I was not able to observe an intermediate
+state for many of the sorting algorithms. To find my final answers, I used a combination of
+guessing and whatever information I could find from the various methods I employed.

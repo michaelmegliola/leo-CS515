@@ -1,0 +1,30 @@
+#!/bin/bash -f
+
+echo "+++++++TEST queue 1 ++++++++" 
+./queuetest1
+echo "+++++++TEST queue 2 ++++++++" 
+./queuetest2
+echo "+++++++TEST queue 3 ++++++++" 
+./queuetest3 
+echo "+++++++TEST queue 4 ++++++++" 
+./queuetest4
+
+echo "+++++++TEST stack 1 ++++++++" 
+./stacktest1 
+echo "+++++++TEST stack 2 ++++++++" 
+./stacktest2
+echo "+++++++TEST stack 3 ++++++++" 
+./stacktest3
+echo "+++++++TEST stack 4 ++++++++" 
+./stacktest4
+echo "+++++++TEST stack 5 ++++++++" 
+valgrind ./stacktest5
+
+echo "+++++++++Valgrind checks++++++" 
+valgrind ./stacktest3 
+
+
+echo 
+echo
+
+valgrind ./stacktest4 

@@ -1,0 +1,95 @@
+********** PROGRAM OUTPUT ********
++++++++TEST queue 1 ++++++++
+testing empty queue
+correct
+testing enqueues
+looking at output should be 0,10,20,30,40,50,60,70,80,90
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+done
+testing dequeues
+dump of empty queue
++++++++TEST queue 2 ++++++++
+testing enqueues and dequeues
+there should be no outputs
++++++++TEST queue 3 ++++++++
+testing queueing and dequeueing on almost full queue
+should be all zero's
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+output should be 9990,9991,9992,9993,9994,9995,9996,9997,9998,9999
+9990
+9991
+9992
+9993
+9994
+9995
+9996
+9997
+9998
+9999
++++++++TEST queue 4 ++++++++
+testing mildly filled queue
+should output 11107 to 11110
+11107
+11108
+11109
+11110
+nothing should be output after here
++++++++TEST stack 1 ++++++++
++++++++TEST stack 2 ++++++++
+exception caught
+exception caught
++++++++TEST stack 3 ++++++++
+test done
++++++++TEST stack 4 ++++++++
+testing done
++++++++++Valgrind checks++++++
+==118818== Memcheck, a memory error detector
+==118818== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==118818== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==118818== Command: ./stacktest3
+==118818== 
+test done
+==118818== 
+==118818== HEAP SUMMARY:
+==118818==     in use at exit: 0 bytes in 0 blocks
+==118818==   total heap usage: 6 allocs, 6 frees, 76,952 bytes allocated
+==118818== 
+==118818== All heap blocks were freed -- no leaks are possible
+==118818== 
+==118818== For counts of detected and suppressed errors, rerun with: -v
+==118818== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+==118819== Memcheck, a memory error detector
+==118819== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==118819== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==118819== Command: ./stacktest4
+==118819== 
+testing done
+==118819== 
+==118819== HEAP SUMMARY:
+==118819==     in use at exit: 0 bytes in 0 blocks
+==118819==   total heap usage: 4 allocs, 4 frees, 77,600 bytes allocated
+==118819== 
+==118819== All heap blocks were freed -- no leaks are possible
+==118819== 
+==118819== For counts of detected and suppressed errors, rerun with: -v
+==118819== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

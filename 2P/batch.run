@@ -1,0 +1,32 @@
+#!/bin/bash -f
+
+echo "+++++++TEST A++++++++"   
+./evaluation < input00
+
+echo "+++++++TEST B++++++++"   
+./evaluation < input01
+ 
+echo "+++++++Graded Tests++++++++"
+echo "+++++++TEST 1++++++++"   
+./evaluation < input1  
+
+echo "+++++++TEST 2++++++++"   
+./evaluation < input2  
+
+echo "+++++++TEST 3++++++++"   
+./evaluation < input3  
+
+echo "+++++++TEST 4++++++++"   
+./evaluation < input4  
+
+echo "+++++++TEST 5++++++++"   
+./evaluation < input5   
+
+echo "+++++++TEST 6++++++++"   
+./evaluation < input6 
+
+echo "+++++++TEST 7++++++++"   
+./evaluation < input7 
+
+echo "+++++++TEST 8++++++++"   
+./evaluation < input8 

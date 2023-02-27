@@ -1,0 +1,106 @@
++++++++TEST A++++++++
+Which minute to query? Data at minute 0 is a 1-minute(s) high.
+Which minute to query? Data at minute 1 is a 2-minute(s) high.
+Which minute to query? Data at minute 2 is a 3-minute(s) high.
+Which minute to query? Data at minute 3 is a 4-minute(s) high.
+Which minute to query? Data at minute 4 is a 1-minute(s) high.
+Which minute to query? Data at minute 5 is a 2-minute(s) high.
+Which minute to query? Data at minute 6 is a 7-minute(s) high.
+Which minute to query? Data at minute 7 is a 1-minute(s) high.
+Which minute to query? Data at minute 8 is a 1-minute(s) high.
+Which minute to query? Data at minute 9 is a 3-minute(s) high.
+Which minute to query? Query minute out of range
+Which minute to query? 
++++++++TEST B++++++++
+Which minute to query? Data at minute 0 is a 1-minute(s) high.
+Which minute to query? Data at minute 1 is corrupted.
+Which minute to query? Data at minute 2 is corrupted.
+Which minute to query? Data at minute 3 is corrupted.
+Which minute to query? Data at minute 4 is a 5-minute(s) high.
+Which minute to query? Data at minute 5 is a 6-minute(s) high.
+Which minute to query? Data at minute 6 is a 7-minute(s) high.
+Which minute to query? Data at minute 7 is a 1-minute(s) high.
+Which minute to query? Data at minute 8 is a 1-minute(s) high.
+Which minute to query? Data at minute 9 is a 3-minute(s) high.
+Which minute to query? Query minute out of range
+Which minute to query? 
++++++++TEST C++++++++
+Which minute to query? Query minute out of range
+Which minute to query? Wrong query input.
+Which minute to query? 
++++++++TEST 1++++++++
+Which minute to query? Data at minute 0 is a 1-minute(s) high.
+Which minute to query? Data at minute 2 is a 3-minute(s) high.
+Which minute to query? Data at minute 4 is a 1-minute(s) high.
+Which minute to query? Data at minute 6 is a 1-minute(s) high.
+Which minute to query? Data at minute 8 is a 9-minute(s) high.
+Which minute to query? Data at minute 10 is a 2-minute(s) high.
+Which minute to query? Data at minute 15 is a 1-minute(s) high.
+Which minute to query? Data at minute 20 is a 21-minute(s) high.
+Which minute to query?
++++++++TEST 2++++++++
+Which minute to query? Data at minute 35 is a 1-minute(s) high.
+Which minute to query? Data at minute 45 is a 46-minute(s) high.
+Which minute to query? Data at minute 50 is a 5-minute(s) high.
+Which minute to query? Data at minute 60 is a 1-minute(s) high.
+Which minute to query? Data at minute 70 is a 8-minute(s) high.
+Which minute to query? Data at minute 90 is a 1-minute(s) high.
+Which minute to query? Data at minute 95 is a 34-minute(s) high.
+Which minute to query? Data at minute 99 is a 38-minute(s) high.
+Which minute to query?
++++++++TEST 3++++++++
+Which minute to query? Data at minute 0 is corrupted.
+Which minute to query? Data at minute 1 is corrupted.
+Which minute to query? Data at minute 2 is corrupted.
+Which minute to query? Data at minute 3 is corrupted.
+Which minute to query? Data at minute 4 is corrupted.
+Which minute to query? Data at minute 5 is corrupted.
+Which minute to query? Data at minute 6 is corrupted.
+Which minute to query? Data at minute 7 is corrupted.
+Which minute to query? Data at minute 8 is corrupted.
+Which minute to query? Data at minute 9 is corrupted.
+Which minute to query?
++++++++TEST 4++++++++
+Which minute to query? Data at minute 0 is a 1-minute(s) high.
+Which minute to query? Data at minute 1 is a 2-minute(s) high.
+Which minute to query? Data at minute 2 is a 3-minute(s) high.
+Which minute to query? Data at minute 3 is corrupted.
+Which minute to query? Data at minute 4 is corrupted.
+Which minute to query? Data at minute 5 is corrupted.
+Which minute to query? Data at minute 6 is corrupted.
+Which minute to query? Data at minute 7 is corrupted.
+Which minute to query? Data at minute 8 is a 6-minute(s) high.
+Which minute to query? Data at minute 9 is a 10-minute(s) high.
+Which minute to query? Data at minute 10 is a 1-minute(s) high.
+Which minute to query? Data at minute 100 is a 1-minute(s) high.
+Which minute to query? Data at minute 250 is a 2-minute(s) high.
+Which minute to query?
++++++++TEST 5++++++++
+Which minute to query? Data at minute 300 is a 1-minute(s) high.
+Which minute to query? Data at minute 350 is a 2-minute(s) high.
+Which minute to query? Data at minute 500 is a 1-minute(s) high.
+Which minute to query? Data at minute 701 is a 31-minute(s) high.
+Which minute to query? Data at minute 702 is a 1-minute(s) high.
+Which minute to query? Data at minute 703 is a 2-minute(s) high.
+Which minute to query? Data at minute 704 is a 1-minute(s) high.
+Which minute to query? Data at minute 705 is a 2-minute(s) high.
+Which minute to query? Data at minute 706 is a 36-minute(s) high.
+Which minute to query? Data at minute 707 is a 37-minute(s) high.
+Which minute to query? Data at minute 708 is a 1-minute(s) high.
+Which minute to query? Query minute out of range
+Which minute to query?
++++++++TEST 6++++++++
+Wrong number of arguments
+Wrong number of arguments
+Error opening file
++++++++TEST 7++++++++
+Which minute to query? Wrong query input.
+Which minute to query? Wrong query input.
+Which minute to query? Wrong query input.
+Which minute to query? Wrong query input.
+Which minute to query? Wrong query input.
+Which minute to query?
++++++++TEST 8++++++++
+Which minute to query? Query minute out of range
+Which minute to query? Query minute out of range
+Which minute to query?

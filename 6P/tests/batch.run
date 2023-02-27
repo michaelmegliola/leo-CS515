@@ -1,0 +1,24 @@
+#!/bin/tcsh -f
+
+echo "+++++++SET TEST 1++++++++" 
+./settest1
+
+echo "+++++++SET TEST 2++++++++" 
+./settest2 
+
+echo "+++++++SET TEST 3++++++++" 
+./settest3
+
+echo "+++++++SET TEST 4++++++++" 
+./settest4
+
+echo "+++++++SET TEST 5++++++++" 
+./settest5
+
+echo "+++++++Valgrind++++++++" 
+valgrind ./settest1
+valgrind ./settest2
+valgrind ./settest3
+valgrind ./settest4
+valgrind ./settest5
+

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/leomegliola/CLionProjects/12P_local/mynetwork.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+list
+-
+map
+-
+set
+-
+stack
+-
+algorithm
+-
+queue
+-
+

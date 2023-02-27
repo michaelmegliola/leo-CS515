@@ -1,0 +1,30 @@
+ssh B
+ping A
+ping B
+ping C
+ping D
+ping E
+ping F
+ping G
+ssh E
+ping A
+ping B
+ping C
+ping D
+ping E
+ping F
+ping G
+ssh G
+ping A
+ping B
+ping C
+ping D
+ping E
+ping F
+ping G
+exit
+exit
+exit
+exit
+
+

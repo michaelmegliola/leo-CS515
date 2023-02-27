@@ -1,0 +1,47 @@
+
+----------output1----------
+
+What is your name?
+Hello World!
+Welcome to CS515, Jar Jar Binks!
+
+----------output2----------
+
+What is your name?
+What is your name?
+Hello World!
+Welcome to CS515, Jabba the Hutt!
+
+----------output3----------
+
+What is your name?
+What is your name?
+What is your name?
+What is your name?
+Hello World!
+Welcome to CS515, Darth Vader!
+
+----------output4----------
+
+=====Results of test.run====
++++++++TEST 1++++++++
+What is your name?
+Hello World!
+Welcome to CS515, Jar Jar Binks!
++++++++TEST 2++++++++
+What is your name?
+What is your name?
+Hello World!
+Welcome to CS515, Jabba the Hutt!
++++++++TEST 3++++++++
+What is your name?
+What is your name?
+What is your name?
+What is your name?
+Hello World!
+Welcome to CS515, Darth Vader!
+
+----------Done----------
+
+chgrp: cannot access 'output': No such file or directory
+chmod: cannot access 'output': No such file or directory

@@ -1,0 +1,19 @@
+CS515 Assignment 4
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+How many hours did you take to complete this assignment?
+
+3.5
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+3
+
+What challenges did you encounter? And how did you address them?
+
+I attempted an optimisation by copying only the elements of the prior array that were necessary when expanding capacity
+in enqueue. I had to write over all other elements to satisfy valgrind (uninitialized element error). It would not have
+caused a seg fault or other error because my algorithm would always write over these elements before reading them.

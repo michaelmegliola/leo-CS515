@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/leomegliola/CLionProjects/7L_local/main.cpp
+iostream
+-
+set.h
+/Users/leomegliola/CLionProjects/7L_local/set.h
+cassert
+-
+
+/Users/leomegliola/CLionProjects/7L_local/set.cpp
+set.h
+/Users/leomegliola/CLionProjects/7L_local/set.h
+
+/Users/leomegliola/CLionProjects/7L_local/set.h
+iostream
+-
+string
+-
+limits
+-
+queue
+-
+stack
+-
+

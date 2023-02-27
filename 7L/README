@@ -1,0 +1,21 @@
+CS515 Lab 7
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+How many hours did you take to complete this assignment?
+
+3.5
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+4
+
+What challenges did you encounter? And how did you address them?
+
+I spent a solid 40 to 50 minutes thinking the stack was printed vertically instead of horizontally.
+I only noticed because I was looking in a debugger and saw that the right and left children of root
+were not what I expected. I also spent a little while thinking I could use _root as the root instead
+of _root->left. I realize I could have use std::queue to represent a stack, but instead I included
+std::stack.

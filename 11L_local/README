@@ -1,0 +1,19 @@
+CS515 Lab 11
+
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+How many hours did you take to complete this assignment?
+
+3.5
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+3
+
+What challenges did you encounter? And how did you address them?
+
+It took me a little while to notice the objects representing head and tail in the constructor.
+After finding these, insert was significantly easier to write.

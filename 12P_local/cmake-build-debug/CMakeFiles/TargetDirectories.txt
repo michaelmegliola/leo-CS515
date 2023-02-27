@@ -1,0 +1,3 @@
+/Users/leomegliola/CLionProjects/12P_local/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/leomegliola/CLionProjects/12P_local/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/leomegliola/CLionProjects/12P_local/cmake-build-debug/CMakeFiles/12P_local.dir

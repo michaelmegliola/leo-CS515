@@ -1,0 +1,43 @@
+#!/bin/bash -f
+
+# Basic tests
+echo "+++++++TEST A++++++++"
+./calSpan data0 < goodinput
+
+echo "+++++++TEST B++++++++"
+./calSpan data1 < goodinput
+
+echo "+++++++TEST C++++++++"
+./calSpan data1 < badinput
+
+# Graded tests
+echo "+++++++TEST 1++++++++"
+./calSpan data2 < data2input1
+
+echo "+++++++TEST 2++++++++"
+./calSpan data2 < data2input2
+
+# file with all corrupted data
+echo "+++++++TEST 3++++++++"
+./calSpan data3 < data3input1
+
+# bigger file
+echo "+++++++TEST 4++++++++"
+./calSpan data4 < data4input1
+
+echo "+++++++TEST 5++++++++"
+./calSpan data4 < data4input2
+
+# command line argument
+echo "+++++++TEST 6++++++++"
+./calSpan 
+./calSpan s4Df%sx dr56tdd
+./calSpan s4Df%sx
+
+# user input errors
+echo "+++++++TEST 7++++++++"
+./calSpan data1 < data1input1
+
+echo "+++++++TEST 8++++++++"
+./calSpan data1 < data1input2
+

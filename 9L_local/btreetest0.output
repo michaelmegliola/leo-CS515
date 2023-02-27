@@ -1,0 +1,20 @@
+Enter int(key) string(data) pair to insert (Control-D to quit) 
+[11]
+	[5]
+		[3]
+			1:date 2:apple
+			3:watermelon 4:clementine
+		[8]
+			5:starfruit 7:cherry
+			8:pear 9:grape
+	[21,30]
+		[13,18]
+			11:pineapple 12:banana
+			13:lychee 14:persimmon 17:plum
+			18:orange 19:papaya 20:kiwi
+		[24]
+			21:grapefruit 22:blueberry 23:strawberry
+			24:pomegranates 25:mango
+		[35]
+			30:coconut 31:cranberry
+			35:peach 37:raspberry

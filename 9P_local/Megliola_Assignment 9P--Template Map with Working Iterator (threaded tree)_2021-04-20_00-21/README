@@ -1,0 +1,20 @@
+CS515 Assignment 9
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+How many hours did you take to complete this assignment?
+
+8 (+3 for rewrite)
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+7
+
+What challenges did you encounter? And how did you address them?
+
+On this program in particular; I would have liked the ability to write my own helper
+functions and code pattern. After getting the test cases, I noticed my biggest mistake
+was not understanding how to use the provided rethread in my assignment operator. Also,
+I would have set up a reverse iterator because I needed the predecessor several times.

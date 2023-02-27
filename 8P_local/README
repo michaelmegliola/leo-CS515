@@ -1,0 +1,18 @@
+CS515 Assignment 8
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+How many hours did you take to complete this assignment?
+
+6
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+5
+
+What challenges did you encounter? And how did you address them?
+
+I had a segfault because I kept a pointer that pointed to an object that was allocated on the stack.
+I fixed the issue by call new on my pointer.

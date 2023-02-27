@@ -1,0 +1,271 @@
+Enter int(key) string(data) pair to insert (Control-D to quit) 
+----printing tree----
+3:watermelon
+----printing tree----
+3:watermelon 5:starfruit
+----printing tree----
+3:watermelon 5:starfruit 8:pear
+----printing tree----
+[5]
+	2:apple 3:watermelon
+	5:starfruit 8:pear
+----printing tree----
+[5]
+	2:apple 3:watermelon
+	5:starfruit 8:pear 11:pineapple
+----printing tree----
+[5,11]
+	2:apple 3:watermelon
+	5:starfruit 8:pear
+	11:pineapple 12:banana
+----printing tree----
+[5,11]
+	2:apple 3:watermelon
+	5:starfruit 8:pear
+	11:pineapple 12:banana 18:orange
+----printing tree----
+[11]
+	[5]
+		2:apple 3:watermelon
+		5:starfruit 8:pear
+	[18]
+		11:pineapple 12:banana
+		18:orange 20:kiwi
+----printing tree----
+[11]
+	[5]
+		2:apple 3:watermelon
+		5:starfruit 8:pear
+	[18]
+		11:pineapple 12:banana
+		18:orange 20:kiwi 31:cranberry
+----printing tree----
+[11]
+	[5]
+		2:apple 3:watermelon
+		5:starfruit 8:pear 9:grape
+	[18]
+		11:pineapple 12:banana
+		18:orange 20:kiwi 31:cranberry
+----printing tree----
+[11]
+	[5]
+		2:apple 3:watermelon
+		5:starfruit 8:pear 9:grape
+	[18]
+		11:pineapple 12:banana 14:persimmon
+		18:orange 20:kiwi 31:cranberry
+----printing tree----
+[11]
+	[5]
+		2:apple 3:watermelon
+		5:starfruit 8:pear 9:grape
+	[18,21]
+		11:pineapple 12:banana 14:persimmon
+		18:orange 20:kiwi
+		21:grapefruit 31:cranberry
+----printing tree----
+[11]
+	[5]
+		2:apple 3:watermelon
+		5:starfruit 8:pear 9:grape
+	[18,21]
+		11:pineapple 12:banana 14:persimmon
+		18:orange 19:papaya 20:kiwi
+		21:grapefruit 31:cranberry
+----printing tree----
+[11]
+	[5]
+		2:apple 3:watermelon
+		5:starfruit 8:pear 9:grape
+	[18,21]
+		11:pineapple 12:banana 14:persimmon
+		18:orange 19:papaya 20:kiwi
+		21:grapefruit 24:pomegranates 31:cranberry
+----printing tree----
+[11]
+	[5,8]
+		2:apple 3:watermelon
+		5:starfruit 7:cherry
+		8:pear 9:grape
+	[18,21]
+		11:pineapple 12:banana 14:persimmon
+		18:orange 19:papaya 20:kiwi
+		21:grapefruit 24:pomegranates 31:cranberry
+----printing tree----
+[11,21]
+	[5,8]
+		2:apple 3:watermelon
+		5:starfruit 7:cherry
+		8:pear 9:grape
+	[18]
+		11:pineapple 12:banana 14:persimmon
+		18:orange 19:papaya 20:kiwi
+	[24]
+		21:grapefruit 22:blueberry
+		24:pomegranates 31:cranberry
+----printing tree----
+[11,21]
+	[5,8]
+		1:date 2:apple 3:watermelon
+		5:starfruit 7:cherry
+		8:pear 9:grape
+	[18]
+		11:pineapple 12:banana 14:persimmon
+		18:orange 19:papaya 20:kiwi
+	[24]
+		21:grapefruit 22:blueberry
+		24:pomegranates 31:cranberry
+----printing tree----
+[11,21]
+	[5,8]
+		1:date 2:apple 3:watermelon
+		5:starfruit 7:cherry
+		8:pear 9:grape
+	[13,18]
+		11:pineapple 12:banana
+		13:lychee 14:persimmon
+		18:orange 19:papaya 20:kiwi
+	[24]
+		21:grapefruit 22:blueberry
+		24:pomegranates 31:cranberry
+----printing tree----
+[11,21]
+	[5,8]
+		1:date 2:apple 3:watermelon
+		5:starfruit 7:cherry
+		8:pear 9:grape
+	[13,18]
+		11:pineapple 12:banana
+		13:lychee 14:persimmon
+		18:orange 19:papaya 20:kiwi
+	[24]
+		21:grapefruit 22:blueberry
+		24:pomegranates 25:mango 31:cranberry
+----printing tree----
+[11,21]
+	[5,8]
+		1:date 2:apple 3:watermelon
+		5:starfruit 7:cherry
+		8:pear 9:grape
+	[13,18]
+		11:pineapple 12:banana
+		13:lychee 14:persimmon
+		18:orange 19:papaya 20:kiwi
+	[24,30]
+		21:grapefruit 22:blueberry
+		24:pomegranates 25:mango
+		30:coconut 31:cranberry
+----printing tree----
+[11]
+	[5]
+		[3]
+			1:date 2:apple
+			3:watermelon 4:clementine
+		[8]
+			5:starfruit 7:cherry
+			8:pear 9:grape
+	[21]
+		[13,18]
+			11:pineapple 12:banana
+			13:lychee 14:persimmon
+			18:orange 19:papaya 20:kiwi
+		[24,30]
+			21:grapefruit 22:blueberry
+			24:pomegranates 25:mango
+			30:coconut 31:cranberry
+----printing tree----
+[11]
+	[5]
+		[3]
+			1:date 2:apple
+			3:watermelon 4:clementine
+		[8]
+			5:starfruit 7:cherry
+			8:pear 9:grape
+	[21]
+		[13,18]
+			11:pineapple 12:banana
+			13:lychee 14:persimmon
+			18:orange 19:papaya 20:kiwi
+		[24,30]
+			21:grapefruit 22:blueberry
+			24:pomegranates 25:mango
+			30:coconut 31:cranberry 35:peach
+----printing tree----
+[11]
+	[5]
+		[3]
+			1:date 2:apple
+			3:watermelon 4:clementine
+		[8]
+			5:starfruit 7:cherry
+			8:pear 9:grape
+	[21]
+		[13,18]
+			11:pineapple 12:banana
+			13:lychee 14:persimmon 17:plum
+			18:orange 19:papaya 20:kiwi
+		[24,30]
+			21:grapefruit 22:blueberry
+			24:pomegranates 25:mango
+			30:coconut 31:cranberry 35:peach
+----printing tree----
+[11]
+	[5]
+		[3]
+			1:date 2:apple
+			3:watermelon 4:clementine
+		[8]
+			5:starfruit 7:cherry
+			8:pear 9:grape
+	[21,30]
+		[13,18]
+			11:pineapple 12:banana
+			13:lychee 14:persimmon 17:plum
+			18:orange 19:papaya 20:kiwi
+		[24]
+			21:grapefruit 22:blueberry
+			24:pomegranates 25:mango
+		[35]
+			30:coconut 31:cranberry
+			35:peach 37:raspberry
+----printing tree----
+[11]
+	[5]
+		[3]
+			1:date 2:apple
+			3:watermelon 4:clementine
+		[8]
+			5:starfruit 7:cherry
+			8:pear 9:grape
+	[21,30]
+		[13,18]
+			11:pineapple 12:banana
+			13:lychee 14:persimmon 17:plum
+			18:orange 19:papaya 20:kiwi
+		[24]
+			21:grapefruit 22:blueberry 23:strawberry
+			24:pomegranates 25:mango
+		[35]
+			30:coconut 31:cranberry
+			35:peach 37:raspberry
+[11]
+	[5]
+		[3]
+			1:date 2:apple
+			3:watermelon 4:clementine
+		[8]
+			5:starfruit 7:cherry
+			8:pear 9:grape
+	[21,30]
+		[13,18]
+			11:pineapple 12:banana
+			13:lychee 14:persimmon 17:plum
+			18:orange 19:papaya 20:kiwi
+		[24]
+			21:grapefruit 22:blueberry 23:strawberry
+			24:pomegranates 25:mango
+		[35]
+			30:coconut 31:cranberry
+			35:peach 37:raspberry

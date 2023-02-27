@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/9L_local.dir/btree.cpp.o CMakeFiles/9L_local.dir/btreetest0.cpp.o -o 9L_local 

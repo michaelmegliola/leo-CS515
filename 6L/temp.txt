@@ -1,0 +1,3 @@
+g++  testPQ.cpp -o testPQ
+g++  testPQ.cpp -o testPQ
+g++  testPQ.cpp -o testPQ

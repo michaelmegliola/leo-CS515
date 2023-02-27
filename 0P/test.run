@@ -1,0 +1,14 @@
+#!/bin/bash -f
+
+echo "+++++++TEST 0++++++++"
+./hello < input0
+
+#MORE TESTS TO RUN
+echo "+++++++TEST 1++++++++"
+./hello < input1
+
+echo "+++++++TEST 2++++++++"
+./hello < input2
+
+echo "+++++++TEST 3++++++++"
+./hello < input3

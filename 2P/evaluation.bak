@@ -1,0 +1,88 @@
+// infix expression evaluation
+// implemented with STL vector
+// evalues expression with multiple digit numbers, * / + - and {} [] () paratheis
+// assume the expression is well formatted with balanced braces. 
+
+#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+//----------------------------------------------------------------
+// Generates a stack of string tokens representing postfix
+// notation for the input line
+void generateRPN(string line, stack<string> &postfix);
+void pop2(stack<int>& s, int* p1, int* p2);
+//----------------------------------------------------------------
+// Returns a the result of evaluating the passed postfix token
+// stack as a decimal string
+string evaluateRPN(stack<string> &postfix)
+{
+    cout << "I am here";
+    stack<string> prefix;
+    stack<int> rpnstack;
+
+    while (!postfix.empty()) {
+        prefix.push(postfix.top());
+        postfix.pop();
+    }
+
+    int a;
+    int b;
+    while (!prefix.empty()) {
+        string token = prefix.top();
+        prefix.pop();
+        if (token == "+") {
+            pop2(rpnstack, &a, &b);
+            rpnstack.push(a + b);
+        }/*
+        else if (token == "-") {
+            pop2(rpnstack, ptr1, ptr2);
+            rpnstack.push(*ptr1 - *ptr2);
+        }
+        else if (token == "*") {
+            pop2(rpnstack, ptr1, ptr2);
+            rpnstack.push(*ptr1 * *ptr2);
+        }
+        else if (token == "/") {
+            pop2(rpnstack, ptr1, ptr2);
+            rpnstack.push(*ptr1 / *ptr2);
+        }*/
+        else
+            rpnstack.push(stoi(token));
+
+        cout << prefix.top() << " ";
+        prefix.pop();
+    }
+    cout << rpnstack.top() << endl;
+    return "yup, done";
+}
+
+void pop2(stack<int>& s, int* p1, int* p2)
+{
+    *p2 = s.top();
+    s.pop();
+    *p1 = s.top();
+    s.pop();
+}
+
+//----------------------------------------------------------------
+int main(int argc, char ** argv)
+{
+    string line;
+    cout << "Expression: ";
+    while ( getline(cin, line) )
+    {
+        // skip empty line
+        if (line.length() == 0)
+            continue;
+
+        stack<string> postfix;
+        generateRPN(line, postfix);
+
+        cout << "Answer: " << evaluateRPN(postfix) << endl;
+        line.clear();
+        cout << "Expression: ";
+    }
+    return 0;
+}

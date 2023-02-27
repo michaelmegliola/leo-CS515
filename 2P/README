@@ -1,0 +1,19 @@
+CS515 Assignment 2
+
+Name: Leo Megliola
+uid: lm1229
+Section: 01R/L2R
+
+How many hours did you take to complete this assignment?
+
+2
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+1
+
+What challenges did you encounter? And how did you address them?
+
+Last year, my java class spent a long time working with pre/postfix notation for math operations using stacks. We also
+used trees to parse expressions like with GenerateRPN. I was already familiar with this exact problem, just not in c++.
+I also added code to allow unary operations like: -5, I pushed a 0 onto the stack ahead of evaluating the expression.

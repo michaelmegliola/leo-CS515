@@ -1,0 +1,220 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <list>
+#include <map>
+#include <set>
+#include <stack>
+#include <algorithm>
+using namespace std;
+
+class DisjointSet {
+public:
+    string find(string key) {
+        if (parent[key] != key)
+            parent[key] = find(parent[key]);    //_path compression
+        return parent[key];
+    }
+
+    int size() {
+        return parent.size();
+    }
+
+    bool set_union(string a, string b) {
+        string rep_a = find(a);
+        string rep_b = find(b);
+
+        if (rep_a == rep_b)
+            return false;
+
+        if (rank[rep_a] > rank[rep_b])
+            parent[rep_b] = rep_a;
+        else if (rank[rep_a] < rank[rep_b])
+            parent[rep_a] = rep_b;
+        else {
+            parent[rep_a] = rep_b;
+            rank[rep_b]++;
+        }
+        return true;
+    }
+
+    void insert(string key) {
+        parent[key] = key;
+        rank[key] = 0;
+    }
+
+private:
+    map<string, string> parent;
+    map<string, int> rank;
+};
+
+class Graph {
+public:
+    Graph() {
+        _weights = new edge[100];
+    }
+
+    ~Graph() {
+        delete[] _weights;
+    }
+
+    void read_file(string fname) {
+        stringstream s;
+        ifstream infile;
+        infile.open(fname);
+        if (infile.fail()) {    //handles file open error
+            cout << "error opening file" << endl;
+            return;
+        }
+
+        s << infile.rdbuf();    //read entire file
+        infile.close();
+
+        string word;            //to store individual words
+        list <float> vals;      //temp data storage
+        float val;              //to store individual values
+
+        string a="", b="", c="";
+        while (s >> a >> b >> c) {
+            if (a=="" || b=="" || c=="")
+                break;
+            if (a != b) {
+                int e;
+                for (e = 0; e < _size; e++) {
+                    if ((_weights[e].a == a && _weights[e].b == b) || (_weights[e].a == b && _weights[e].b == a)) {
+                        _weights[e].weight = _weights[e].weight < stoi(c)? _weights[e].weight: stoi(c);
+                        break;
+                    }
+                }
+                if (e == _size) {
+                    _weights[_size].a = a;
+                    _weights[_size].b = b;
+                    _weights[_size].weight = stoi(c);
+                    _nodes.insert(a);
+                    _nodes.insert(b);
+                    _size++;
+                }
+            }
+        }
+        _nodearray = new string[_nodes.size()];
+        int i = 0;
+        for (set<string>::iterator it = _nodes.begin(); it != _nodes.end(); it++) {
+            _nodearray[i++] = *it;
+        }
+        sort(_nodearray, _nodearray + _nodes.size());
+    }
+
+    void print_nodes() {
+        for (int i = 0; i < _nodes.size(); i++)
+            cout << _nodearray[i] << endl;
+    }
+
+    string first_node() {
+        return _nodearray[0];
+    }
+
+    bool exists(string key) {
+        return _nodes.find(key) == _nodes.end();
+    }
+
+    void kruskal() {
+        sort(_weights, _weights + _size, compare_edges);
+
+        DisjointSet ds;
+        for (int i = 0; i < _size; i++) {
+            ds.insert(_weights[i].a);
+            ds.insert(_weights[i].b);
+        }
+
+        for (int e = 0; e < _size; e++) {
+            if (ds.find(_weights[e].a) != ds.find(_weights[e].b)) {
+                ds.set_union(_weights[e].a, _weights[e].b);
+                _mst[_weights[e].a].push_front(_weights[e].b);
+                _mst[_weights[e].b].push_front(_weights[e].a);
+            }
+        }
+    }
+
+    list<string> find(string parent, string dest) {
+        _path.clear();
+        find(parent, parent, dest);
+        return _path;
+    }
+
+    bool find(string parent, string cur, string dest) {
+        if (cur == dest) {
+            _path.push_front(dest);
+            return true;
+        }
+        for (string adj:_mst[cur]) {
+            if (adj != parent)
+                if (find(cur, adj, dest)) {
+                    _path.push_front(cur);
+                    return true;
+                };
+        }
+        return false;
+    }
+
+private:
+    struct edge {
+        string a; string b; int weight;
+    };
+    edge* _weights;
+    map<string, list<string> > _mst;
+    list<string> _path;
+    set<string> _nodes;
+    string* _nodearray;
+    int _size = 0;
+
+    static bool compare_edges(edge x, edge y) { //comparison function for sorting edges
+        return x.weight < y.weight;
+    }
+};
+
+int main(int argc, char ** argv) {
+    Graph g;
+    g.read_file(argv[1]);
+    g.kruskal();
+
+    stack<string> path;
+    path.push(g.first_node());
+
+    while (true) {
+        cout << "<" << path.top() << "># ";
+        string cmd, arg;
+
+        cin >> cmd;
+        if (!(cmd == "ping" || cmd == "exit" || cmd == "ssh")) {
+            cout << "unknown command" << endl;
+            continue;
+        }
+        if (cmd == "exit") {
+            path.pop();
+            if (path.empty())
+                break;
+        }
+        else {
+            cin >> arg;
+            if (g.exists(arg)) {
+                cout << "Cannot find node. Available nodes are:" << endl;
+                g.print_nodes();
+                continue;
+            }
+            if (cmd == "ping") {
+                cout << " From: " << path.top() << endl;
+                list<string> result = g.find(path.top(), arg);
+                list<string>::iterator it = result.begin();
+                it++;
+                while (it != result.end()) {
+                    cout << "   To: " << *it << endl;
+                    it++;
+                }
+            } else {
+                path.push(arg);
+            }
+        }
+    }
+
+    return 0;
+}

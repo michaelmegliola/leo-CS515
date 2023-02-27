@@ -1,0 +1,19 @@
+CS515 Assignment 0
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+How many hours did you take to complete this assignment?
+
+1.5
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+2
+
+What challenges did you encounter? And how did you address them?
+
+test.run was not executable because I downloaded the files locally then scp'd them to agate.
+I believe it would have behaved normally if I had copied them. I used 'chmod 777' to make it
+executable (it took a few minutes to figure that out). 

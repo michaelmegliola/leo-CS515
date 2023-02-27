@@ -1,0 +1,20 @@
+CS515 Assignment 6
+
+Name: Leo Megliola
+uid: lm1229
+Section: L2R
+
+How many hours did you take to complete this assignment?
+
+12
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+8
+
+What challenges did you encounter? And how did you address them?
+
+Because the header file requires both forward and reverse iterators, I did not expect that the
+decrement operator would need to work starting from the forward end, or starting from the reverse
+beginning. I added dummy nodes at either end to support those operations. I found Mimir's feedback
+to be inadequate when debugging my original program, because I could not reproduce the failures.
